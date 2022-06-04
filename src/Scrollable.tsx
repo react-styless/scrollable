@@ -5,7 +5,6 @@ interface Props {
   vertical?: boolean;
 }
 const Scrollable: React.FC<Props> = ({ children, vertical }) => {
-  console.log("render Scrollable");
   const childrenRef = React.useRef<any[]>([]);
   let pos = {
     isActive: false,
